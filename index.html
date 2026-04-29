@@ -1,57 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Limelight&display=swap');
-body {
 
-    background-color: #000000 ;
-    color: #F6F6F6 ;
-    height: 100vh;
+body {
+    background-color: #000000;
+    color: #F6F6F6;
+    min-height: 100vh; /* Alterado de height para min-height */
+    margin: 0; /* É sempre bom zerar a margem padrão do body */
 }
 
-.conteudo{ /*container principal*/ 
-
+.conteudo { 
     display: flex; 
     align-items: center;
     justify-content: space-between;
-    margin: 10% 15%;
-
+    margin: 5% 10%; /* Diminuí um pouco a margem para telas menores */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas pequenas */
 }
-.conteudo__texto{/*conteiner secundario*/
-    display: flex; /*itens -> linha*/
-    flex-direction: column; /*itens -> coluna*/
-    width: 615px;
+
+.conteudo__texto {
+    display: flex; 
+    flex-direction: column; 
+    max-width: 615px; /* Use max-width para ser responsivo */
+    width: 100%;
     gap: 40px;
-    
-
 }
 
-.conteudo__texto_titulo{
-    font-size: 50px ;
+.conteudo__texto_titulo {
+    font-size: 50px;
     font-family: "Pinyon Script", cursive;
     font-weight: 400;
-    font-style: normal;
 }
-.conteudo__texto_paragrafo{
-    font-size: 20px ;
-    font-family: "Pinyon Script", cursive;
-    font-weight: 400;
-    font-style: normal;
 
+.conteudo__texto_paragrafo {
+    font-size: 20px;
+    font-family: "Tinos", serif; /* Alterado para Tinos para melhor leitura */
+    font-weight: 400;
+    line-height: 1.5; /* Melhora o espaçamento entre linhas */
 }
-.conteudo__texto_botões{/*container de links <a>*/
+
+.conteudo__texto_botões {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start; /* Geralmente botões ficam melhor alinhados à esquerda ou centro */
+    gap: 20px; /* Usa gap em vez de space-evenly para controle total */
 }
-.conteudo__texto_botões_botão1{
-    background-color:#FD3422;
+
+.conteudo__texto_botões_botão1 {
+    background-color: #FD3422;
     color: #F6F6F6;
-    width: 100px;
-    padding: 21px;
+    min-width: 120px; /* min-width é mais seguro que width fixo */
+    padding: 15px 25px; /* Padding vertical e horizontal */
     border-radius: 16px;
     text-decoration: none;
     font-family: "Kaushan Script", cursive;
-    font-weight: 400;
-    font-style: normal;
     text-align: center;
+    transition: 0.3s; /* Para um efeito suave ao passar o mouse */
+}
 
-
+.conteudo__texto_botões_botão1:hover {
+    background-color: #c0281a; /* Efeito de destaque ao passar o mouse */
 }
