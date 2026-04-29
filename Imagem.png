@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portifólio Willian</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header></header>
+        <main class="conteudo"> 
+            <!-- coluna da esquerda inicio  -->
+            <section class="conteudo__texto">
+                <h1 class="conteudo__texto_titulo">"O homem, uma máquina, uma besta enjaulada"</h1>
+                <p class="conteudo__texto_paragrafo">Pô, futebol não se ganha só com talento de improvisar, não, seu filho da p*a. Futebol é esporte coletivo. Você, influenciar no jogo, nos seus companheiros, positivamente, como o Cristiano faz, porque ele é um líder nato, é mais importante para ele do que pegar a bola lá atrás e vir driblando todo mundo.Porque se botar você de 10 no Real Madrid, ele vai olhar dentro da tua cara, filha da p*a, e vai te convencer a você pensar que você é o Ronaldinho Gaúcho. E você vai dar um passe para ele, ele vai meter gol e vai te dar 200 merréis.O psicológico comanda o corpo, seu filho d...O melhor do mundo é o Cristiano, o ano passado, e esse ano vai ser de novo, porque ele vai ganhar a Champions de novo. Porque ele é vitorioso. Ganhador. Vitorioso. Um homem, uma máquina, uma besta enjaulada com ódio. Seu filha da p**a. Ele não para! Nunca! P*rra! Ele vence, e vence, e vence. Só!</p>
+                <div class="conteudo__texto_botões">
+                    <!-- Botões -->
+                    <a class="conteudo__texto_botões_botão1" href="https://www.youtube.com/watch?v=VMUcFoA0nk8">SIUUU</a>
+                    <a class="conteudo__texto_botões_botão1" href="https://www.youtube.com/watch?v=sBUMv0LWpXk"> HIGHLIGHTS</a>
+
+                </div>
+            </section>
+            <!-- coluna da esquerda fim -->
+            <!-- coluna da direita inicio -->
+            <img src="img/Imagem (1).png">
+            <!-- coluna da direita fim -->
+
+        </main>
+        <footer></footer>
+    </body>
+</html>
