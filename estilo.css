@@ -1,0 +1,78 @@
+/* Reset básico para garantir que o layout funcione em qualquer navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Limelight&family=Pinyon+Script&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: #000000;
+    color: #F6F6F6;
+    min-height: 100vh;
+    display: flex; /* Garante que o conteúdo possa se alinhar ao centro da tela */
+    flex-direction: column;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto; /* Centraliza o container na tela */
+    width: 80%; /* Usa porcentagem para ser mais flexível */
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.conteudo__texto {
+    display: flex;
+    flex-direction: column;
+    max-width: 615px;
+    gap: 30px;
+}
+
+.conteudo__texto_titulo {
+    font-size: clamp(30px, 5vw, 50px); /* Fonte diminui em telas menores */
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+}
+
+.conteudo__texto_paragrafo {
+    font-size: 1.2rem;
+    font-family: "Tinos", serif;
+    line-height: 1.6;
+}
+
+.conteudo__texto_botões {
+    display: flex;
+    gap: 20px;
+}
+
+.conteudo__texto_botões_botão1 {
+    background-color: #FD3422;
+    color: #F6F6F6;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: "Kaushan Script", cursive;
+    transition: transform 0.2s, background 0.2s;
+    display: inline-block;
+}
+
+.conteudo__texto_botões_botão1:hover {
+    background-color: #d12b1c;
+    transform: scale(1.05);
+}
+
+/* Ajuste para Celular */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .conteudo__texto_botões {
+        justify-content: center;
+    }
+}
